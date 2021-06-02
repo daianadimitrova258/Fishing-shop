@@ -5,7 +5,7 @@ body {
     align-items: center;
 }
 
-.header {
+header {
     width: 100%;
     background: #E9FFFC;
     display: flex;
@@ -16,18 +16,19 @@ body {
     border-style: solid;
 }
 
-.header h1 {
+header h1 {
     font-size: 50px;
     font-style: italic;
     letter-spacing: 2px;
     color: #FFCC00;
     -webkit-text-stroke: 1px #006666;
     text-align: center;
-    margin: 5px 50px 5px 200px;
+    margin: 10px 200px;
+    display: inline-block;
     padding: 10px;
 }
 
-.header img {
+header img {
     margin-top: -13px;
     width: 150px;
     height: 150px;
@@ -37,39 +38,42 @@ body {
 .toolbar {
     background: #006666;
     width: 100%;
-    height: 50px;
-    display: flex;
-    flex-flow: row wrap;
+    display: inline-block;
 }
 
-.toolbar p {
+.toolbar nav p {
     color: white;
     font-size: 20px;
     position: absolute;
-    margin-left: 730px;
-    margin-top: 10px;
+    margin-left: 450px;
     padding: 0px;
     font-style: italic;
+    float: right;
 }
 
-.horizontal-menu a {
+a+a {
+    margin-left: 15px;
+}
+
+.toolbar nav a {
+    float: left;
     color: white;
     display: inline;
-    padding: 12px;
+    padding: 5px;
     text-decoration: none;
     font-size: 20px;
 }
 
-.horizontal-menu {
+.toolbar nav {
     margin-left: 300px;
-    padding: 10px;
+    padding: 5px;
 }
 
-.horizontal-menu a:hover {
+.toolbar nav a:hover {
     color: #FFCC00;
 }
 
-.horizontal-menu a:focus {
+.toolbar nav a:focus {
     text-decoration: none;
     color: white;
 }
@@ -86,12 +90,12 @@ body {
     height: 550px;
 }
 
-.nav {
+.menu-plus-image nav {
     margin: 0px 0px;
     width: 300px;
 }
 
-.nav a {
+.menu-plus-image nav a {
     background-color: #2C9A40;
     color: white;
     display: block;
@@ -100,16 +104,16 @@ body {
     font-size: 20px;
 }
 
-.nav a:hover {
+.menu-plus-image nav a:hover {
     color: #FFCC00;
 }
 
-.nav a.active {
+.menu-plus-image nav a.active {
     background-color: #FFCC00;
     color: black;
 }
 
-.nav a:focus {
+.menu-plus-image nav a:focus {
     text-decoration: none;
     color: white;
 }
@@ -120,18 +124,18 @@ body {
     font-size: 28px;
 }
 
-.intro {
+section {
     height: auto;
     width: 1050px;
     margin: auto;
 }
 
-.intro h2 {
+section h2 {
     text-align: center;
     color: #006666;
 }
 
-.intro p {
+section p {
     text-align: justify;
 }
 
@@ -419,7 +423,7 @@ label {
     word-wrap: break-word;
     min-height: 30px;
     border-radius: 3px;
-    font-family: Arial;
+    font-family: "OCR A Std", monospace;
     font-size: 14px;
     line-height: 1.5;
     color: black;
